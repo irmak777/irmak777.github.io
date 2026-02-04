@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  overflow: hidden;
+}
+
+/* Video base */
+.video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* Desktop */
+.desktop {
+  display: block;
+}
+
+/* Mobile */
+.mobile {
+  display: none;
+}
+
+/* Mobile breakpoint */
+@media (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
